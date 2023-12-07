@@ -19,7 +19,7 @@ function App() {
       Hello World
       <BrowserRouter>
         <Routes>
-          <Route path="/welcome" Component={Welcome} />
+          <Route path="/" Component={Welcome} />
           <Route path="/staff/*" Component={StaffLogin} />
           <Route path="/user" Component={UserLogin} />
         </Routes>
