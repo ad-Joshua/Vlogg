@@ -1,17 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-function InsideHome(){
+function InsideHome() {
+  const navigate = useNavigate();
 
-    return(
-        <div>
-            <h1>Inside Home</h1>
-            <form>
-                <fieldset>
-                    <legend>Setup</legend>
-                </fieldset>
-            </form>
-        </div>
-    )
+  return (
+    <div>
+      <h1>Inside Home</h1>
+      <button onClick={() => navigate("/staff/home")}>back to home</button>
+    </div>
+  );
 }
 
 export default InsideHome;
